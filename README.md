@@ -42,16 +42,7 @@ NIM_NamaLengkap_JudulTubes.py
 
 ## ❗ Cara Upload Source Code
 
-### 1. Via GitHub Web (Recommended)
-1. Buka repository ini: `https://github.com/desyadelina/ALPRO_G-TubesSMT1-2025`
-2. Masuk ke folder `submissions/`
-3. Klik tombol **"Add file"** → **"Upload files"**
-4. Drag & drop file `.py` kamu atau klik **"choose your files"**
-5. Pastikan nama file sudah sesuai format: `NIM_NamaLengkap_JudulTubes.py`
-6. Tulis commit message (contoh: "Upload tubes - [Nama Kamu]")
-7. Klik **"Commit changes"**
-
-### 2. Via Pull Request (Alternatif)
+### 1. Via Pull Request
 1. Fork repository ini
 2. Clone repository hasil fork ke komputer kamu
 3. Tambahkan file source code kamu ke folder `submissions/` link: https://github.com/desyadelina/ALPRO_G-TubesSMT1-2025/tree/main/submissions
