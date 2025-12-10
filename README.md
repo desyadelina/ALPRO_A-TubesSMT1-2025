@@ -58,31 +58,6 @@ NIM_NamaLengkap_JudulTubes.py
 4. Commit dan push ke repository fork kamu
 5. Buat Pull Request ke repository utama
 
-## Format Header Source Code
-Tambahkan informasi ini di bagian atas file source code kamu:
-
-```python
-# filepath: submissions/NIM_NamaLengkap_JudulTubes.py
-# Nama     : [Nama Lengkap Kamu]
-# NIM      : [NIM Kamu]
-# Judul    : [Judul Tugas Besar Kamu]
-
-# kode program dimulai di sini
-def main():
-    # ...
-```
-
-**Contoh:**
-```python
-# filepath: submissions/11251015_DesyAdelinaR_FlashcardStudyManager.py
-# Nama     : Desy Adelina R
-# NIM      : 11251015
-# Judul    : Flashcard Study Manager
-
-def dummy_data():
-    # ...
-```
-
 ## Deadline Pengumpulan
 **Deadline:** Setelah UAS Selesai (Akan diinformasikan lebih lanjut)
 
