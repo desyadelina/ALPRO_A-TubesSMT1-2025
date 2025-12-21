@@ -1,0 +1,168 @@
+# ===============================================
+#          PEMESANAN TIKET KERETA API
+# ===============================================
+
+import os
+
+# Data tujuan dan harga dasar (dalam rupiah)
+daftar_tujuan = {
+    "Jakarta": 100000,
+    "Bandung": 120000,
+    "Surabaya": 250000,
+    "Yogyakarta": 270000,
+    "Semarang": 150000
+}
+
+# Data kelas dan faktor harga
+kelas_kereta = {
+    "Ekonomi": 1.0,
+    "Bisnis": 1.5,
+    "Eksekutif": 2.0
+}
+
+# List untuk menyimpan pesanan
+data_pesanan = []
+
+
+# ------------------------------------------------
+# Fungsi Membersihkan Layar
+# ------------------------------------------------
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+# ------------------------------------------------
+# Fungsi Menampilkan Menu
+# ------------------------------------------------
+def tampilkan_menu():
+    print("=" * 45)
+    print("     SISTEM PEMESANAN TIKET KERETA API")
+    print("=" * 45)
+    print("1. Pesan Tiket")
+    print("2. Lihat Daftar Pesanan")
+    print("3. Keluar")
+    print("4. Urutkan Pesanan (Bubble Sort)")
+    print("=" * 45)
+
+
+# ------------------------------------------------
+# Fungsi Bubble Sort
+# ------------------------------------------------
+def bubble_sort(data, key):
+    n = len(data)
+    for i in range(n - 1):
+        for j in range(n - i - 1):
+            if data[j][key] > data[j + 1][key]:
+                data[j], data[j + 1] = data[j + 1], data[j]
+
+
+# ------------------------------------------------
+# Fungsi Pemesanan Tiket
+# ------------------------------------------------
+def pesan_tiket():
+    clear_screen()
+    print("=== PEMESANAN TIKET ===")
+    nama = input("Masukkan nama penumpang: ")
+
+    print("\nDaftar Tujuan:")
+    for i, kota in enumerate(daftar_tujuan.keys(), start=1):
+        print(f"{i}. {kota} - Rp{daftar_tujuan[kota]:,}")
+    tujuan_pilihan = int(input("Pilih nomor tujuan: "))
+    tujuan = list(daftar_tujuan.keys())[tujuan_pilihan - 1]
+
+    print("\nPilih Kelas Kereta:")
+    for i, kls in enumerate(kelas_kereta.keys(), start=1):
+        print(f"{i}. {kls}")
+    kelas_pilihan = int(input("Pilih nomor kelas: "))
+    kelas = list(kelas_kereta.keys())[kelas_pilihan - 1]
+
+    jumlah_tiket = int(input("\nMasukkan jumlah tiket: "))
+
+    # Hitung total harga
+    harga_dasar = daftar_tujuan[tujuan]
+    faktor = kelas_kereta[kelas]
+    total_harga = harga_dasar * faktor * jumlah_tiket
+
+    # Simpan data ke list
+    pesanan = {
+        "Nama": nama,
+        "Tujuan": tujuan,
+        "Kelas": kelas,
+        "Jumlah": jumlah_tiket,
+        "Total": total_harga
+    }
+    data_pesanan.append(pesanan)
+
+    print("\nTiket berhasil dipesan!")
+    print(f"Total yang harus dibayar: Rp{total_harga:,.0f}")
+    input("\nTekan Enter untuk kembali ke menu...")
+
+
+# ------------------------------------------------
+# Fungsi Melihat Daftar Pesanan
+# ------------------------------------------------
+def lihat_pesanan():
+    clear_screen()
+    print("=== DAFTAR PESANAN ===")
+    if not data_pesanan:
+        print("Belum ada pesanan tiket.")
+    else:
+        for i, p in enumerate(data_pesanan, start=1):
+            print(f"\nPesanan {i}:")
+            print(f"Nama Penumpang : {p['Nama']}")
+            print(f"Tujuan         : {p['Tujuan']}")
+            print(f"Kelas          : {p['Kelas']}")
+            print(f"Jumlah Tiket   : {p['Jumlah']}")
+            print(f"Total Bayar    : Rp{p['Total']:,.0f}")
+    input("\nTekan Enter untuk kembali ke menu...")
+
+
+# ------------------------------------------------
+# Fungsi Mengurutkan Pesanan (Bubble Sort)
+# ------------------------------------------------
+def urutkan_pesanan():
+    clear_screen()
+    print("=== URUTKAN PESANAN (BUBBLE SORT) ===")
+
+    if not data_pesanan:
+        print("Belum ada pesanan untuk diurutkan.")
+        input("\nTekan Enter untuk kembali...")
+        return
+
+    print("\nPilihan Pengurutan:")
+    print("1. Berdasarkan Nama Penumpang (A-Z)")
+    print("2. Berdasarkan Total Bayar (Termurah → Termahal)")
+    pilihan = input("Pilih [1/2]: ")
+
+    if pilihan == "1":
+        bubble_sort(data_pesanan, "Nama")
+        print("\nPesanan berhasil diurutkan berdasarkan Nama!")
+    elif pilihan == "2":
+        bubble_sort(data_pesanan, "Total")
+        print("\nPesanan berhasil diurutkan berdasarkan Total Bayar!")
+    else:
+        print("\nPilihan tidak valid.")
+
+    input("\nTekan Enter untuk kembali...")
+
+
+# ------------------------------------------------
+# MAIN PROGRAM
+# ------------------------------------------------
+while True:
+    clear_screen()
+    tampilkan_menu()
+    pilihan = input("Pilih menu [1-4]: ")
+
+    if pilihan == '1':
+        pesan_tiket()
+    elif pilihan == '2':
+        lihat_pesanan()
+    elif pilihan == '3':
+        print("\nTerima kasih telah menggunakan sistem kami.")
+        break
+    elif pilihan == '4':
+        urutkan_pesanan()
+    else:
+        print("Pilihan tidak valid!")
+        input("Tekan Enter untuk mencoba lagi...")
