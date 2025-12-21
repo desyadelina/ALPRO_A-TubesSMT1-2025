@@ -1,0 +1,32 @@
+Penggaris (cm)
+x=1.5
+y=1.4
+z=1.5
+Mikrometer Sekrup (mm)
+x=14.60
+y=15.6
+z=16
+Jangka sorong (cm)
+Dl=18.9
+Dd=10.6
+Kd=9.35
+Neraca o'haus (g)
+g1=3.28
+g2=3.24
+g3=3.23
+g4=3.16
+g5=3.2
+Amperemeter digital (mA)
+mA1=0.05
+mA2=0.04
+mA3=0.03
+mA4=0.02
+mA5=0.01
+Voltmeter digital (V)
+V1=2.037
+V2=2.075
+V3=2.056
+V4=2.063
+V5=2.024
+Massa dadu (g)
+gD=4.52

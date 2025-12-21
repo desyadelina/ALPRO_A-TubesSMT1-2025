@@ -1,0 +1,115 @@
+Hasil Penggaris dalam mm
+x=0.15 mm
+y=0.13999999999999999
+z=0.15 mm
+
+Pengukuran berulang Penggaris
+x=1.5
+ ± 0.05 cm
+y=1.4
+ ± 0.05 cm
+z=1.5
+ ± 0.05 cm
+
+Hasil Mikrometer Sekrup dalam cm
+x=1.46 cm
+y=1.56 cm
+z=1.6 cm
+
+Pengukuran berulang Mikrometer Sekrup
+x=1.46 ± 0.005 cm
+y=1.56 ± 0.005 cm
+z=1.6 ± 0.005 cm
+
+Hasil Jangka Sorong dalam cm
+x=1.89 cm
+y=1.06 cm
+z=0.9349999999999999 cm
+
+Pengukuran berulang Mikrometer Sekrup
+x=1.89 ± 0.005 cm
+y=1.06 0.005 cm
+z=0.9349999999999999 ± 0.005 cm
+
+Pengukuran berulang Neraca O'hauss
+Percobaan 1: 3.28
+ ± 0.005 g
+Percobaan 2: 3.24
+ ± 0.005 g
+Percobaan 3: 3.23
+ ± 0.005 g
+Percobaan 4: 3.16
+ ± 0.005 g
+Hasil Amperemeter Digital dalam A
+
+Percobaan 1: 5e-05 A
+Percobaan 2: 4e-05 A
+Percobaan 3: 2.9999999999999997e-05 A
+Percobaan 4: 2e-05 A
+Percobaan 5: 1e-05 A
+Pengukuran berulang Amperemeter Digital
+
+Percobaan 1: 5e-05 A
+Percobaan 2: 4e-05 A
+Percobaan 3: 2.9999999999999997e-05 A
+Percobaan 4: 2e-05 A
+Percobaan 5: 1e-05 A
+Hasil Voltmeter Digital dalam mV
+
+Percobaan 1: 2037.0 mV
+Percobaan 2: 2075.0 mV
+Percobaan 3: 2056.0 mV
+Percobaan 4: 2063.0 mV
+Percobaan 5: 2024.0 mV
+Pengukuran berulang Voltmeter Digital
+
+Percobaan 1: 2.037
+ ± 0.005 V
+Percobaan 2: 2.075
+ ± 0.005 V
+Percobaan 3: 2.056
+ ± 0.005 V
+Percobaan 4: 2.063
+ ± 0.005 V
+Percobaan 5: 2.024
+ ± 0.005 V
+
+Volume pengukuran Penggaris: 3.1499999999999995 cm
+Volume pengukuran Jangka Sorong: 1.873179 cm
+Volume pengukuran Mikrometer Sekrup: 3.6441600000000003 cm
+
+Ketidakpastian pengukuran volume Penggaris: 0.6449999999999999
+Ketidakpastian pengukuran volume Jangka Sorong: 0.047616500000000006
+Ketidakpastian pengukuran volume Mikrometer Sekrup: 0.07109600000000002
+
+Massa jenis pengukuran volume Penggaris: 1.434920634920635 g/cm^3
+Massa jenis pengukuran volume Jangka Sorong: 2.413010182155576 g/cm^3
+Massa jenis pengukuran volume Mikrometer Sekrup: 1.2403407095187915 g/cm^3
+
+Ketidakpastian massa jenis Penggaris: 0.2954043839758126
+Ketidakpastian massa jenis Jangka Sorong: 0.024360020451913704
+Ketidakpastian massa jenis Mikrometer Sekrup: 0.0337584448023287
+
+Pengukuran berulang Amperemeter Digital
+Percobaan 1: (0.05
+ - 0.03)^2 = 0.0004000000000000002
+Percobaan 2: (0.04
+ - 0.03)^2 = 0.00010000000000000005
+Percobaan 3: (0.03
+ - 0.03)^2 = 0.0
+Percobaan 4: (0.02
+ - 0.03)^2 = 9.999999999999996e-05
+Percobaan 5: (0.01
+ - 0.03)^2 = 0.00039999999999999986
+
+Pengukuran berulang Voltmeter Digital
+Percobaan 1: (2.037
+ - 2.051)^2 = 0.00019600000000000655
+Percobaan 2: (2.075
+ - 2.051)^2 = 0.000576000000000001
+Percobaan 3: (2.056
+ - 2.051)^2 = 2.4999999999998934e-05
+Percobaan 4: (2.063
+ - 2.051)^2 = 0.00014400000000000025
+Percobaan 5: (2.024
+ - 2.051)^2 = 0.0007290000000000073

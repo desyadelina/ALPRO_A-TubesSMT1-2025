@@ -1,0 +1,17 @@
+Kalor jenis kuningan 1: 4847.0 J/C
+Kalor jenis kuningan 2: 7610.6393442622975 J/C
+Kalor jenis kuningan 3: 42594.200000000004 J/C
+Kalor jenis tembaga 1: 239.0 J/C
+Kalor jenis tembaga 2: 959.0 J/C
+Kalor jenis tembaga 3: 719.0 J/C
+Kalor jenis besi 1: 239.0 J/C
+Kalor jenis besi 2: 959.0 J/C
+Kalor jenis besi 3: 719.0 J/C
+Kalor jenis aluminium 1: 239.0 J/C
+Kalor jenis aluminium 2: 959.0 J/C
+Kalor jenis aluminium 3: 719.0 J/C
+Rata-rata kalor jenis kuningan: 18350.613114754102
+Rata-rata kalor jenis tembaga: 639.0
+Rata-rata kalor jenis besi: 639.0
+Rata-rata kalor jenis aluminium: 639.0
+Pengurutan kalor jenis dari yang terkecil ke yang terbesar: [639.0, 639.0, 639.0, 18350.613114754102]
