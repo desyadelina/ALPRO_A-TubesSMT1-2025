@@ -1,0 +1,117 @@
+
+reviews = []  # tempat menyimpan semua review lagu
+
+
+def create_review():
+    print("\n=== Tambah Review Lagu ===")
+    judul = input("Judul Lagu       : ")
+    penyanyi = input("Penyanyi         : ")
+    genre = input("Genre            : ")
+    rating = input("Rating (1-10)    : ")
+    komentar = input("Komentar         : ")
+
+    review = {
+        "judul": judul,
+        "penyanyi": penyanyi,
+        "genre": genre,
+        "rating": rating,
+        "komentar": komentar
+    }
+
+    reviews.append(review)
+    print("\n✔ Review lagu berhasil ditambahkan!\n")
+
+
+def read_reviews():
+    print("\n=== Daftar Review Lagu ===")
+    if not reviews:
+        print("Belum ada review lagu.")
+        return
+    
+    for i, r in enumerate(reviews, start=1):
+        print(f"\n[{i}] {r['judul']} - {r['penyanyi']}")
+        print(f"   Genre    : {r['genre']}")
+        print(f"   Rating   : {r['rating']}")
+        print(f"   Komentar : {r['komentar']}")
+
+
+def search_review():
+    print("\n=== Cari Review Lagu ===")
+    keyword = input("Masukkan judul lagu: ")
+
+    found = False
+    for r in reviews:
+        if r["judul"].lower() == keyword.lower():
+            print("\n✔ Review ditemukan!")
+            print(f"Judul    : {r['judul']}")
+            print(f"Penyanyi : {r['penyanyi']}")
+            print(f"Genre    : {r['genre']}")
+            print(f"Rating   : {r['rating']}")
+            print(f"Komentar : {r['komentar']}")
+            found = True
+            break
+
+    if not found:
+        print("✖ Review tidak ditemukan.")
+
+
+def update_review():
+    print("\n=== Update Review Lagu ===")
+    keyword = input("Masukkan judul lagu yang ingin di-update: ")
+
+    for r in reviews:
+        if r["judul"].lower() == keyword.lower():
+            print("\nData review ditemukan. Masukkan perubahan:")
+
+            new_rating = input("Rating baru (1–10)      : ")
+            new_komentar = input("Komentar baru           : ")
+
+            r["rating"] = new_rating
+            r["komentar"] = new_komentar
+
+            print("\n✔ Review berhasil diperbarui!\n")
+            return
+
+    print("✖ Review tidak ditemukan.")
+
+
+def delete_review():
+    print("\n=== Hapus Review Lagu ===")
+    keyword = input("Masukkan judul lagu yang ingin dihapus: ")
+
+    for r in reviews:
+        if r["judul"].lower() == keyword.lower():
+            reviews.remove(r)
+            print("\n✔ Review berhasil dihapus!\n")
+            return
+
+    print("✖ Review tidak ditemukan.")
+
+
+# MENU UTAMA
+while True:
+    print("\n====== Sistem Review Lagu Pribadi ======")
+    print("1. Tambah Review Lagu ")
+    print("2. Lihat Semua Review ")
+    print("3. Cari Review Lagu")
+    print("4. Update Review Lagu")
+    print("5. Hapus Review Lagu ")
+    print("6. Keluar")
+
+    pilihan = input("Pilih menu (1–6): ")
+
+    if pilihan == "1":
+        create_review()
+    elif pilihan == "2":
+        read_reviews()
+    elif pilihan == "3":
+        search_review()
+    elif pilihan == "4":
+        update_review()
+    elif pilihan == "5":
+        delete_review()
+    elif pilihan == "6":
+        print("Keluar dari program...")
+        break
+    else:
+        print("Pilihan tidak valid, coba lagi.")
